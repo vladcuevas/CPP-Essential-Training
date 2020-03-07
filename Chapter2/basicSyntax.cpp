@@ -1,7 +1,7 @@
 #include "basicSyntax.h"
 using namespace std;
 
-int pointer::execute()
+int basicSyntax::pointer()
 {
 	puts("");
 	puts("Pointers:");
@@ -20,7 +20,7 @@ int pointer::execute()
 	return 0;
 }
 
-int reference::execute()
+int basicSyntax::reference()
 {
 	puts("");
 	puts("References:");
@@ -60,7 +60,7 @@ int reference::execute()
 	return 0;
 }
 
-int primitiveArray::execute()
+int basicSyntax::primitiveArray()
 {
 	printf("\nPrimitiveArrays:\n");
 
@@ -123,7 +123,7 @@ int primitiveArray::execute()
 	return 0;
 }
 
-int primitiveString::execute()
+int basicSyntax::primitiveString()
 {
 	printf("\nPrimitive Strings:\n");
 
@@ -137,7 +137,7 @@ int primitiveString::execute()
 	return 0;
 }
 
-int conditionals::execute()
+int basicSyntax::conditionals()
 {
 	printf("\nConditionals:\n");
 
@@ -150,7 +150,7 @@ int conditionals::execute()
 }
 
 #include <iostream>
-int coutMe::execute()
+int basicSyntax::coutTest()
 {
 	printf("\ncout:\n");
 

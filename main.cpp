@@ -26,20 +26,13 @@ int main()
 
 	puts("");
 
-	pointer po;
-	po.execute();
+	basicSyntax bs;
 
-	reference re;
-	re.execute();
-
-	primitiveArray pa;
-	pa.execute();
-
-	primitiveString ps;
-	ps.execute();
-
-	conditionals co;
-	co.execute();
+	bs.pointer();
+	bs.reference();
+	bs.primitiveArray();
+	bs.primitiveString();
+	bs.conditionals();
 
 	switchMe();
 
@@ -49,8 +42,7 @@ int main()
 
 	rangeBasedForLoop();
 
-	coutMe cOutMe;
-	cOutMe.execute();
+	bs.coutTest();
 
 	integerTypes intTypes;
 	intTypes.execute();
@@ -88,4 +80,5 @@ int main()
 	ops.pointerIncremental();
 	ops.typeIdTest();
 	ops.compoundOperators();
+	ops.IncrementDecrementOperators();
 }

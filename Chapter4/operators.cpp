@@ -116,3 +116,30 @@ int operators::compoundOperators()
 
 	return 0;
 }
+
+int operators::IncrementDecrementOperators()
+{
+	printf("\nIncrement Operators:\n");
+
+	int i = 0;
+	//Increment Before
+	printf("\ni is %d", ++i);
+	printf("\ni is %d", ++i);
+	printf("\ni is %d", ++i);
+	//Increment After
+	printf("\ni is %d", i++);
+	printf("\ni is %d", i++);
+	printf("\ni is %d", i++);
+	//Decrement Before
+	printf("\ni is %d", --i);
+	printf("\ni is %d", --i);
+	printf("\ni is %d", --i);
+	//Decrement After
+	printf("\ni is %d", i--);
+	printf("\ni is %d", i--);
+	printf("\ni is %d", i--);
+
+	//Prefix is more efficient
+
+	return 0;
+}

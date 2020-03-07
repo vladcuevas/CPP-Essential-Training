@@ -1,32 +1,12 @@
 #include <cstdio>
 using namespace std;
 
-class pointer {
+class basicSyntax {
 public:
-	int execute();
-};
-
-class reference {
-public:
-	int execute();
-};
-
-class primitiveArray {
-public:
-	int execute();
-};
-
-class primitiveString {
-public:
-	int execute();
-};
-
-class conditionals {
-public:
-	int execute();
-};
-
-class coutMe {
-public:
-	int execute();
+	int pointer();
+	int reference();
+	int primitiveArray();
+	int primitiveString();
+	int conditionals();
+	int coutTest();
 };

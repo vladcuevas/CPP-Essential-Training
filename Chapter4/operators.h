@@ -32,4 +32,5 @@ public:
 	void printp(char* p);
 	int typeIdTest();
 	int compoundOperators();
+	int IncrementDecrementOperators();
 };
