@@ -13,7 +13,7 @@ public:
 class newDelete
 {
 private:
-	static constexpr size_t count = 1024;
+	static constexpr size_t count = 128;
 public:
 	int execute();
 };

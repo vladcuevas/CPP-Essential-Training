@@ -6,11 +6,21 @@ void bprint::execute()
 	printf("\nbprint:\n");
 	uint8_t x = 5;
 	uint8_t y = 10;
-	uint8_t z = x | y;
+	uint8_t zOR = x | y; //x or y
+	uint8_t zAND = x & y; //x and y
+	uint8_t zXOR = x ^ y; //x xor y, exclusive or
+	uint8_t zNOT = ~y; //x xor y, exclusive or
+	uint8_t zShiftLeft = y << 1; //x xor y, exclusive or
+	uint8_t zShiftRight = y >> 1; //x xor y, exclusive or
 
 	printf("x is %s\n", u8_to_cstr(x));
 	printf("y is %s\n", u8_to_cstr(y));
-	printf("result is %s\n", u8_to_cstr(z));
+	printf("result of zOR is %s\n", u8_to_cstr(zOR));
+	printf("result of zAND is %s\n", u8_to_cstr(zAND));
+	printf("result of zXOR is %s\n", u8_to_cstr(zXOR));
+	printf("result of zNOT is %s\n", u8_to_cstr(zNOT));
+	printf("result of zShiftLeft is %s\n", u8_to_cstr(zShiftLeft));
+	printf("result of zShiftRight is %s\n", u8_to_cstr(zShiftRight));
 }
 
 const char* bprint::u8_to_cstr(const uint8_t& x)
@@ -35,7 +45,7 @@ int newDelete::execute()
 	long int* ip;
 
 	try {
-		ip = new long int[count];
+		ip = new long int[count]; //new allocation, new way to use malloc
 	}
 	catch (std::bad_alloc & ba) {
 		fprintf(stderr, "Cannot allocate memory (%s)\n", ba.what());
@@ -54,7 +64,7 @@ int newDelete::execute()
 	puts("");
 
 	// deallocate array
-	delete[] ip;
+	delete[] ip; //always add if using new
 	puts("space at *ip deleted");
 
 	return 0;

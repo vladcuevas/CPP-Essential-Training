@@ -11,6 +11,7 @@
 
 #include "Chapter3/dataTypes.h"
 #include "Chapter4/operators.h"
+#include "Chapter5/function.h"
 
 using namespace std;
 
@@ -81,4 +82,7 @@ int main()
 	ops.typeIdTest();
 	ops.compoundOperators();
 	ops.IncrementDecrementOperators();
+
+	function func;
+	func.pointerFunction();
 }

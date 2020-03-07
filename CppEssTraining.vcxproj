@@ -148,6 +148,7 @@
     <ClCompile Include="Chapter2\while.cpp" />
     <ClCompile Include="Chapter3\dataTypes.cpp" />
     <ClCompile Include="Chapter4\operators.cpp" />
+    <ClCompile Include="Chapter5\function.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +162,7 @@
     <ClInclude Include="Chapter2\while.h" />
     <ClInclude Include="Chapter3\dataTypes.h" />
     <ClInclude Include="Chapter4\operators.h" />
+    <ClInclude Include="Chapter5\function.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
